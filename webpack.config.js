@@ -4,9 +4,9 @@ module.exports = {
     entry: path.join(__dirname, 'src', 'browser.ts'),
     output: {
         library: {
-            root: 'SafeJsonType',
-            amd: 'safe-json-type',
-            commonjs: 'safe-json-type'
+            root: 'SafeJsonTypePlugins',
+            amd: 'safe-json-type-plugins',
+            commonjs: 'safe-json-type-plugins'
         },
         libraryTarget: 'umd',
         path: path.join(__dirname, 'dist'),
