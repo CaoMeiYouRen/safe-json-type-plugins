@@ -1,3 +1,11 @@
+## 1.0.0 (2020-02-15)
+
+* 1.0.0 ([fa4ddab](https://github.com/CaoMeiYouRen/safe-json-type-plugins/commit/fa4ddab))
+* docs: 更新了README.md，现在看起来更加规范了 ([2973d7d](https://github.com/CaoMeiYouRen/safe-json-type-plugins/commit/2973d7d))
+* docs: 更新日志 ([4a66a3a](https://github.com/CaoMeiYouRen/safe-json-type-plugins/commit/4a66a3a))
+
+
+
 ## <small>0.1.1-beta (2020-02-15)</small>
 
 * 0.1.1-beta ([7dcc6a7](https://github.com/CaoMeiYouRen/safe-json-type-plugins/commit/7dcc6a7))
