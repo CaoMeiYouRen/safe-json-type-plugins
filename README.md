@@ -1,8 +1,37 @@
-# safe-json-type-plugins
+<h1 align="center">safe-json-type-plugins </h1>
+<p>
+  <a href="https://www.npmjs.com/package/safe-json-type-plugins" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/safe-json-type-plugins.svg">
+  </a>
+  <img src="https://img.shields.io/badge/node-%3E%3D12-blue.svg" />
+  <a href="https://github.com/CaoMeiYouRen/safe-json-type-plugins#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/CaoMeiYouRen/safe-json-type-plugins/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/CaoMeiYouRen/safe-json-type-plugins/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/CaoMeiYouRen/safe-json-type-plugins" />
+  </a>
+</p>
 
-本包为[safe-json-type](https://github.com/CaoMeiYouRen/safe-json-type)的插件，实现了Date、Buffer等对象的转换。
 
-### 使用
+> safe-json-type的插件，内置了Date、Buffer等对象的转换插件
+
+### 🏠 [主页](https://github.com/CaoMeiYouRen/safe-json-type-plugins)
+
+
+## 环境要求
+
+- node >=12
+
+## 安装
+
+```sh
+yarn install
+```
+
+## 使用
 
 1.  在模块化工程中使用
 
@@ -27,4 +56,31 @@
     const {SafeJsonPluginDate ,SafeJsonPlugin, SafeJson} = SafeJsonTypePlugins
     ```
 
-    
+## 测试
+
+```sh
+yarn run test
+```
+
+## 作者
+
+
+👤 **CaoMeiYouRen**
+* Website: https://blog.cmyr.ltd/
+* GitHub: [@CaoMeiYouRen](https://github.com/CaoMeiYouRen)
+
+## 🤝贡献
+
+欢迎Contributions, issues and feature!<br />请查看 [issues page](https://github.com/CaoMeiYouRen/safe-json-type-plugins/issues). 您还可以查看[contributing guide](https://github.com/CaoMeiYouRen/safe-json-type-plugins/blob/master/CONTRIBUTING.md).
+
+## 支持
+
+如果觉得这个项目有用的话请给一颗⭐️，非常感谢
+
+## 📝 License
+
+Copyright © 2020 [CaoMeiYouRen](https://github.com/CaoMeiYouRen).<br />
+This project is [MIT](https://github.com/CaoMeiYouRen/safe-json-type-plugins/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

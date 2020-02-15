@@ -29,7 +29,7 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=8"
+    "node": ">=12"
   },
   "homepage": "https://github.com/CaoMeiYouRen/safe-json-type-plugins",
   "bugs": {
