@@ -17,7 +17,7 @@
     "prebuild": "rimraf dist",
     "commit": "git add . && git cz",
     "release": "release-it --config ./.release-it.js",
-    "changelog": "conventional-changelog -n ./changelog-option.js -p custom-config -i CHANGELOG.md -s -r 0",
+    "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0",
     "postchangelog": "npm run commit"
   },
   "browser": "dist/browser.min.js",
