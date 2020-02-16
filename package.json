@@ -17,7 +17,7 @@
     "prebuild": "rimraf dist",
     "commit": "git add . && git cz",
     "release": "release-it --config ./.release-it.js",
-    "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0",
+    "changelog": "conventional-changelog -p cmyr-config -i CHANGELOG.md -s -r 0",
     "postchangelog": "npm run commit"
   },
   "browser": "dist/browser.min.js",
@@ -44,7 +44,7 @@
     "@types/node": "^13.1.0",
     "commitizen": "^4.0.3",
     "conventional-changelog-cli": "^2.0.31",
-    "conventional-changelog-cmyr-config": "*",
+    "conventional-changelog-cmyr-config": "^1.0.0",
     "cz-conventional-changelog": "^3.1.0",
     "mocha": "^6.2.2",
     "nyc": "^15.0.0",
