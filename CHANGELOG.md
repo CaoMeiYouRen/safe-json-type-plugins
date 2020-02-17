@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/CaoMeiYouRen/safe-json-type-plugins/compare/v1.0.1...v1.0.2) (2020-02-17)
+
+
+### ✅ Tests | 测试
+
+* 新增测试用例 ([2051aae](https://github.com/CaoMeiYouRen/safe-json-type-plugins/commit/2051aae))
+
+
+
 ## [1.0.1](https://github.com/CaoMeiYouRen/safe-json-type-plugins/compare/v1.0.0...v1.0.1) (2020-02-16)
 
 
