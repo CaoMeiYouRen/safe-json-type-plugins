@@ -16,7 +16,6 @@
     "browser": "webpack --config ./webpack.config.js",
     "prebuild": "rimraf dist",
     "commit": "git add . && git cz",
-    "release": "release-it --config ./.release-it.js",
     "changelog": "conventional-changelog -p cmyr-config -i CHANGELOG.md -s -r 0",
     "postchangelog": "npm run commit"
   },
@@ -40,16 +39,19 @@
     "url": "https://github.com/CaoMeiYouRen/safe-json-type-plugins.git"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/release-notes-generator": "^9.0.0",
     "@types/mocha": "^5.2.7",
     "@types/node": "^13.1.0",
     "commitizen": "^4.0.3",
     "conventional-changelog-cli": "^2.0.31",
-    "conventional-changelog-cmyr-config": "^1.0.0",
+    "conventional-changelog-cmyr-config": "^1.2.0-beta",
     "cz-conventional-changelog": "^3.1.0",
     "mocha": "^6.2.2",
     "nyc": "^15.0.0",
-    "release-it": "^12.4.3",
     "rimraf": "^3.0.2",
+    "semantic-release": "^17.0.4",
     "should": "^13.2.3",
     "ts-loader": "^6.2.1",
     "ts-node": "^8.5.4",
@@ -66,8 +68,6 @@
     }
   },
   "changelog": {
-    "emojis": true,
-    "authorName": false,
-    "authorEmail": false
+    "language": "zh"
   }
 }
