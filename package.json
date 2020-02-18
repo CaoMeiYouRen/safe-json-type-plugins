@@ -17,7 +17,8 @@
     "prebuild": "rimraf dist",
     "commit": "git add . && git cz && git push",
     "changelog": "conventional-changelog -p cmyr-config -i CHANGELOG.md -s -r 0",
-    "postchangelog": "npm run commit"
+    "postchangelog": "npm run commit",
+    "release": "semantic-release"
   },
   "browser": "dist/browser.min.js",
   "jsdelivr": "dist/browser.min.js",
