@@ -1,3 +1,18 @@
+# safe-json-type-plugins
+
+# 1.0.0 (2020-02-18)
+
+
+### ✨ 新功能
+
+* 新增Date、Buffer对象的转换插件 ([8bcc554](https://github.com/CaoMeiYouRen/safe-json-type-plugins/commit/8bcc554))
+
+
+### 🐛 Bug 修复
+
+* 优化了日志生成 ([9ebf31d](https://github.com/CaoMeiYouRen/safe-json-type-plugins/commit/9ebf31d))
+* 修复了模块化工程中使用browser版本的问题 ([8a80073](https://github.com/CaoMeiYouRen/safe-json-type-plugins/commit/8a80073))
+
 ## [1.0.2](https://github.com/CaoMeiYouRen/safe-json-type-plugins/compare/v1.0.1...v1.0.2) (2020-02-17)
 
 
@@ -21,6 +36,3 @@
 ### 🐛 Bug 修复
 
 * 修复了模块化工程中使用browser版本的问题 ([8a80073](https://github.com/CaoMeiYouRen/safe-json-type-plugins/commit/8a80073))
-
-
-
