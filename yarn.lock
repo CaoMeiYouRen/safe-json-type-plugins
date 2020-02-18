@@ -1637,10 +1637,10 @@ conventional-changelog-cli@^2.0.31:
     meow "^5.0.0"
     tempfile "^3.0.0"
 
-conventional-changelog-cmyr-config@^1.2.0-beta:
-  version "1.2.0-beta"
-  resolved "https://registry.npmjs.org/conventional-changelog-cmyr-config/-/conventional-changelog-cmyr-config-1.2.0-beta.tgz#732c6e38d83a1330fc8808b4c90de8198f57b769"
-  integrity sha512-dp46GZrjHXGgNgjDhKJ0fcg2oo8IhLHoUTf+9S9nlZ1Qtx2+nlGMyQ33yvNRL0En4Xmn77GwvwIYNhpVcagy/A==
+conventional-changelog-cmyr-config@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/conventional-changelog-cmyr-config/-/conventional-changelog-cmyr-config-1.2.0.tgz#132e33ec2bcc231634220c4d2ba46b6ccff3a115"
+  integrity sha512-zA+99O0l02xzppm/dZKvhb2Pj/SD+0NvUAy5ixGoqiPJ3UH8nIxrHfAON3mB4Trxg09h0TFdJKoYOsdHqjbLnA==
 
 conventional-changelog-codemirror@^2.0.3:
   version "2.0.3"
