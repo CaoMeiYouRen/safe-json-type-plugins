@@ -1,5 +1,12 @@
 # safe-json-type-plugins
 
+## [1.0.4](https://github.com/CaoMeiYouRen/safe-json-type-plugins/compare/v1.0.3...v1.0.4) (2020-11-04)
+
+
+### 🐛 Bug 修复
+
+* 更新依赖；修正风格 ([642b15d](https://github.com/CaoMeiYouRen/safe-json-type-plugins/commit/642b15d))
+
 # 1.0.0 (2020-02-18)
 
 
