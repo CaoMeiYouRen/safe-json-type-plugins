@@ -1,6 +1,6 @@
 export interface SafeJson {
     __type: string
-    [key: string]: any;
+    [key: string]: any
 }
 export interface SafeJsonPlugin<T extends SafeJson, U> {
     /**

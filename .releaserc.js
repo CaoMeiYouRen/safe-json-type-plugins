@@ -24,11 +24,9 @@ module.exports = {
             {
                 "assets": [
                     "src",
-                    "dist",
                     "License",
                     "CHANGELOG.md",
-                    "package.json",
-                    "yarn.lock"
+                    "package.json"
                 ]
             }
         ]
