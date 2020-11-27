@@ -1,7 +1,7 @@
 import { SafeJsonPlugin, SafeJson } from '../interfaces'
 
 export class SafeJsonDate implements SafeJson {
-    __type: 'Date'
+    __type: 'Date' = 'Date'
     iso: string
 }
 /**

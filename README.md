@@ -49,7 +49,7 @@ npm i -S safe-json-type-plugins
 
 2.  前端通过script标签引用
 
-    推荐使用压缩后的版本browser.min.js，移除了所有依赖
+    推荐使用压缩后的版本browser.min.js，移除了所有依赖。如果是现代浏览器也可以使用 browser.esm.min.js 版本，更为友好
 
     ```js
     SafeJsonTypePlugins.SafeJsonPluginDate //Date转换插件。注意前一个SafeJsonTypePlugins是命名空间，如果觉得不方便可以解构后使用

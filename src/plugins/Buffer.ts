@@ -2,7 +2,7 @@ import { SafeJsonPlugin, SafeJson } from '../interfaces'
 import { Buffer } from 'buffer'
 
 export class SafeJsonBuffer implements SafeJson {
-    __type: 'Bytes'
+    __type: 'Bytes' = 'Bytes'
     base64: string
 }
 /**
