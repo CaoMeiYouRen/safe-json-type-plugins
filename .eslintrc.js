@@ -7,23 +7,14 @@ module.exports = {
         es6: true,
         commonjs: true,
         node: true,
-        mocha: true
+        mocha: true,
     },
     extends: [
-        'cmyr'
+        'cmyr',
     ],
     plugins: [
     ],
-    parserOptions: {
-        ecmaVersion: new Date().getFullYear() - 1,
-        sourceType: 'module',
-        ecmaFeatures: {
-            modules: true
-        }
-    },
-    parser: '@typescript-eslint/parser',
     rules: {
         'no-console': 0, // 禁止console
-        'comma-dangle': [IS_PROD, 'never']
-    }
+    },
 }

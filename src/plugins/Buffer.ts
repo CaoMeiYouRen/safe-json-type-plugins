@@ -22,7 +22,7 @@ export class SafeJsonPluginBuffer implements SafeJsonPlugin<SafeJsonBuffer, Buff
     serialize(obj: Buffer): SafeJsonBuffer {
         return {
             __type: 'Bytes',
-            base64: obj.toString('base64')
+            base64: obj.toString('base64'),
         }
     }
     deserialize(obj: SafeJsonBuffer): Buffer | SafeJsonBuffer {

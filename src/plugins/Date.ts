@@ -21,7 +21,7 @@ export class SafeJsonPluginDate implements SafeJsonPlugin<SafeJsonDate, Date> {
     serialize(obj: Date): SafeJsonDate {
         return {
             __type: 'Date',
-            iso: obj.toISOString()
+            iso: obj.toISOString(),
         }
     }
     deserialize(obj: SafeJsonDate): Date | SafeJsonDate {

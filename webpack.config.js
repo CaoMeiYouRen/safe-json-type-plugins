@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path')
 module.exports = {
     mode: 'production',
@@ -6,11 +7,11 @@ module.exports = {
         library: {
             root: 'SafeJsonTypePlugins',
             amd: 'safe-json-type-plugins',
-            commonjs: 'safe-json-type-plugins'
+            commonjs: 'safe-json-type-plugins',
         },
         libraryTarget: 'umd',
         path: path.join(__dirname, 'dist'),
-        filename: 'browser.min.js'
+        filename: 'browser.min.js',
     },
     node: {
         // do not polyfill Buffer
@@ -24,17 +25,17 @@ module.exports = {
         rules: [
             {
                 test: /\.(ts|tsx)$/,
-                use: 'ts-loader',//配置加载typescript
-                exclude: /node_modules/
-            }
-        ]
+                use: 'ts-loader', // 配置加载typescript
+                exclude: /node_modules/,
+            },
+        ],
     },
     resolve: {
-        //路径别名
+        // 路径别名
         alias: {
             '@': path.resolve(__dirname, './src'),
         },
-        //路径别名自动解析确定的扩展
-        extensions: ['.ts', '.tsx', '.js', '.json']
-    }
+        // 路径别名自动解析确定的扩展
+        extensions: ['.ts', '.tsx', '.js', '.json'],
+    },
 }
