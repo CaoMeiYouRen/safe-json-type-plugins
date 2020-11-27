@@ -28,7 +28,7 @@
 ## 安装
 
 ```sh
-yarn install
+npm i -S safe-json-type-plugins
 ```
 
 ## 使用
@@ -59,7 +59,7 @@ yarn install
 ## 测试
 
 ```sh
-yarn run test
+npm run test
 ```
 
 ## 作者
