@@ -1,5 +1,12 @@
 # safe-json-type-plugins
 
+# [1.1.0](https://github.com/CaoMeiYouRen/safe-json-type-plugins/compare/v1.0.5...v1.1.0) (2020-11-27)
+
+
+### ✨ 新功能
+
+* 采用 rollup 重构，支持 esm 格式 ([1b50bd2](https://github.com/CaoMeiYouRen/safe-json-type-plugins/commit/1b50bd2)), closes [#12](https://github.com/CaoMeiYouRen/safe-json-type-plugins/issues/12)
+
 ## [1.0.5](https://github.com/CaoMeiYouRen/safe-json-type-plugins/compare/v1.0.4...v1.0.5) (2020-11-04)
 
 
