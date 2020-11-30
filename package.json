@@ -18,7 +18,8 @@
     "commit": "git add . && git cz",
     "changelog": "conventional-changelog -p cmyr-config -i CHANGELOG.md -s -r 0",
     "postchangelog": "npm run commit",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "api": "api-extractor run"
   },
   "browser": "dist/browser.min.js",
   "jsdelivr": "dist/browser.min.js",
@@ -41,15 +42,19 @@
     "url": "https://github.com/CaoMeiYouRen/safe-json-type-plugins.git"
   },
   "devDependencies": {
+    "@microsoft/api-extractor": "^7.12.0",
     "@rollup/plugin-commonjs": "^16.0.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
     "@rollup/plugin-typescript": "^6.1.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
+    "@types/fs-extra": "^9.0.4",
+    "@types/gulp": "^4.0.7",
     "@types/mocha": "^8.0.4",
     "@types/node": "^14.14.10",
     "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.8.2",
+    "chalk": "^4.1.0",
     "commitizen": "^4.2.2",
     "conventional-changelog-cli": "^2.1.1",
     "conventional-changelog-cmyr-config": "^1.2.3",
@@ -57,6 +62,8 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.14.0",
     "eslint-config-cmyr": "^1.0.2",
+    "fs-extra": "^9.0.1",
+    "gulp": "^4.0.2",
     "mocha": "^8.2.1",
     "nyc": "^15.1.0",
     "rimraf": "^3.0.2",
