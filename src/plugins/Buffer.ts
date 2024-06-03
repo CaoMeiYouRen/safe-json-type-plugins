@@ -1,5 +1,5 @@
-import { SafeJsonPlugin, SafeJson } from '../interfaces'
 import { Buffer } from 'buffer'
+import { SafeJsonPlugin, SafeJson } from '../interfaces'
 
 export class SafeJsonBuffer implements SafeJson {
     __type: 'Bytes' = 'Bytes'
