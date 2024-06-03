@@ -1,5 +1,12 @@
 # safe-json-type-plugins
 
+## [1.1.1](https://github.com/CaoMeiYouRen/safe-json-type-plugins/compare/v1.1.0...v1.1.1) (2024-06-03)
+
+
+### 🐛 Bug 修复
+
+* 修复 eslint 相关依赖错误；优化构建产物 ([7ceb1cc](https://github.com/CaoMeiYouRen/safe-json-type-plugins/commit/7ceb1cc))
+
 # [1.1.0](https://github.com/CaoMeiYouRen/safe-json-type-plugins/compare/v1.0.5...v1.1.0) (2020-11-27)
 
 
