@@ -24,7 +24,7 @@ module.exports = {
             {
                 "assets": [
                     "src",
-                    "License",
+                    // "License",
                     "CHANGELOG.md",
                     "package.json"
                 ]

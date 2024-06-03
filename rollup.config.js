@@ -3,6 +3,8 @@ import { terser } from 'rollup-plugin-terser'
 import commonjs from '@rollup/plugin-commonjs'
 import typescript from '@rollup/plugin-typescript'
 import { dependencies } from './package.json'
+import dts from 'rollup-plugin-dts'
+
 const external = Object.keys(dependencies)
 const env = process.env
 const IS_PROD = env.NODE_ENV === 'production'
@@ -16,14 +18,17 @@ function getPlugins({ isBrowser = false, isMin = false, isDeclaration = false })
     )
     plugins.push(
         typescript({
-            tsconfig: isDeclaration ? 'tsconfig.json' : 'tsconfig.build.json',
+            tsconfig: 'tsconfig.json',
+            module: 'esnext',
+            target: 'es2019', // node >= 12
             esModuleInterop: true,
             allowSyntheticDefaultImports: true,
+            sourceMap: true,
         }),
     )
     plugins.push(
         commonjs({
-            sourceMap: false,
+            sourceMap: true,
         }),
     )
     if (isMin) {
@@ -40,14 +45,19 @@ export default [
         input: 'src/index.ts', // 生成类型文件
         output: {
             dir: 'dist',
-            format: 'cjs',
+            format: 'esm',
             name: 'SafeJsonTypePlugins',
         },
-        plugins: getPlugins({
-            isBrowser: false,
-            isDeclaration: true,
-            isMin: false,
-        }),
+        plugins: [dts()],
+    },
+    {
+        input: 'src/browser.ts', // 生成类型文件
+        output: {
+            dir: 'dist',
+            format: 'esm',
+            name: 'SafeJsonTypePlugins',
+        },
+        plugins: [dts()],
     },
     {
         input: 'src/index.ts',
@@ -56,6 +66,7 @@ export default [
             file: 'dist/index.js',
             format: 'cjs',
             name: 'SafeJsonTypePlugins',
+            sourcemap: true,
         },
         plugins: getPlugins({
             isBrowser: false,
@@ -70,6 +81,7 @@ export default [
             file: 'dist/index.esm.js',
             format: 'esm',
             name: 'SafeJsonTypePlugins',
+            sourcemap: true,
         },
         plugins: getPlugins({
             isBrowser: false,
@@ -83,6 +95,7 @@ export default [
             file: 'dist/browser.js',
             format: 'umd',
             name: 'SafeJsonTypePlugins',
+            sourcemap: true,
         },
         plugins: getPlugins({
             isBrowser: true,
@@ -101,6 +114,20 @@ export default [
             isBrowser: true,
             isDeclaration: false,
             isMin: IS_PROD,
+        }),
+    },
+    {
+        input: 'src/browser.ts',
+        output: {
+            file: 'dist/browser.esm.js',
+            format: 'esm',
+            name: 'SafeJsonTypePlugins',
+            sourcemap: true,
+        },
+        plugins: getPlugins({
+            isBrowser: true,
+            isDeclaration: false,
+            isMin: false,
         }),
     },
     {
