@@ -47,8 +47,8 @@ devDependencies:
     specifier: ^7.12.0
     version: 7.12.0(eslint@8.57.0)(typescript@5.4.5)
   chalk:
-    specifier: ^4.1.0
-    version: 4.1.2
+    specifier: ^5.3.0
+    version: 5.3.0
   commitizen:
     specifier: ^4.2.2
     version: 4.3.0(@types/node@20.14.0)(typescript@5.4.5)
@@ -263,6 +263,7 @@ packages:
   /@babel/highlight@7.24.6:
     resolution: {integrity: sha512-2YnuOp4HAk2BsBrJJvYCbItHx0zWscI1C3zgWkz+wDyD9I7GIVrfnLyrR4Y1VR+7p+chAEcrgRQYZAGIKMV7vQ==}
     engines: {node: '>=6.9.0'}
+    requiresBuild: true
     dependencies:
       '@babel/helper-validator-identifier': 7.24.6
       chalk: 2.4.2
@@ -2057,7 +2058,6 @@ packages:
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     requiresBuild: true
     dev: true
-    optional: true
 
   /char-regex@1.0.2:
     resolution: {integrity: sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==}
@@ -4627,6 +4627,7 @@ packages:
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    requiresBuild: true
     dev: true
 
   /js-yaml@3.14.1:
