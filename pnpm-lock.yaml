@@ -56,8 +56,8 @@ devDependencies:
     specifier: ^2.1.1
     version: 2.2.2
   conventional-changelog-cmyr-config:
-    specifier: ^1.2.3
-    version: 1.2.3
+    specifier: ^2.1.2
+    version: 2.1.2
   cross-env:
     specifier: ^7.0.2
     version: 7.0.3
@@ -263,6 +263,7 @@ packages:
   /@babel/highlight@7.24.6:
     resolution: {integrity: sha512-2YnuOp4HAk2BsBrJJvYCbItHx0zWscI1C3zgWkz+wDyD9I7GIVrfnLyrR4Y1VR+7p+chAEcrgRQYZAGIKMV7vQ==}
     engines: {node: '>=6.9.0'}
+    requiresBuild: true
     dependencies:
       '@babel/helper-validator-identifier': 7.24.6
       chalk: 2.4.2
@@ -2266,10 +2267,15 @@ packages:
       tempfile: 3.0.0
     dev: true
 
-  /conventional-changelog-cmyr-config@1.2.3:
-    resolution: {integrity: sha512-40TbEy9UChzCc++Crn3GFs5CwxAL2IFnY2LgpPfBARqCXP3s/edkqXCTukzg6HTqpsZeTOGai60jVub9lStdcA==}
+  /conventional-changelog-cmyr-config@2.1.2:
+    resolution: {integrity: sha512-JucNefNoVC1StkGTSKeFRZgOLOsXnmqd3CoaxoI1QPZ093slTdhQrt1doTARJKzvmL+4RL80LiSRneH1mdRSmw==}
+    engines: {node: '>=12'}
     dependencies:
-      defaults: 1.0.4
+      compare-func: 2.0.0
+      debug: 4.3.5
+      q: 1.5.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /conventional-changelog-codemirror@2.0.8:
@@ -4627,6 +4633,7 @@ packages:
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    requiresBuild: true
     dev: true
 
   /js-yaml@3.14.1:
