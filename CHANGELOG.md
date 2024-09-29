@@ -1,5 +1,12 @@
 # safe-json-type-plugins
 
+## [1.1.2](https://github.com/CaoMeiYouRen/safe-json-type-plugins/compare/v1.1.1...v1.1.2) (2024-09-29)
+
+
+### 🐛 Bug 修复
+
+* 修复 rollup 引起的 XSS 漏洞问题 ([83d2729](https://github.com/CaoMeiYouRen/safe-json-type-plugins/commit/83d2729))
+
 ## [1.1.1](https://github.com/CaoMeiYouRen/safe-json-type-plugins/compare/v1.1.0...v1.1.1) (2024-06-03)
 
 
